@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Deeksha</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-purple-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-sm z-50 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <!--<a href="/" class="text-2xl font-bold relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg opacity-20 group-hover:opacity-100 transition-all duration-300 -z-10 blur"></div>
+                    <span class="text-black">D</span><span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">.</span>
+                </a>--->
+                <div class="space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-blue-600">About</a>
+                    <a href="projects.html" class="text-gray-600 hover:text-blue-600">Projects</a>
+                    <a href="achievements.html" class="text-gray-600 hover:text-blue-600">Achievements</a>
+                    <a href="blog.html" class="text-blue-600">Blog</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-blue-600">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <section class="pt-32 pb-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <h1 class="text-5xl font-bold mb-6 text-center">Personal Blog</h1>
+            <p class="text-xl text-gray-600 text-center max-w-2xl mx-auto mb-12">Sharing my thoughts on PR, marketing, storytelling, and personal experiences.</p>
+            
+            <!-- Category Filter -->
+            <div class="flex justify-center gap-4 mb-12">
+                <button class="px-6 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-all">All</button>
+                <button class="px-6 py-2 rounded-full bg-white text-gray-600 hover:bg-blue-50 transition-all">PR & Marketing</button>
+                <button class="px-6 py-2 rounded-full bg-white text-gray-600 hover:bg-blue-50 transition-all">Storytelling</button>
+                <button class="px-6 py-2 rounded-full bg-white text-gray-600 hover:bg-blue-50 transition-all">Personal</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Grid -->
+    <section class="pb-24">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Featured Blog Post -->
+                <div class="col-span-full lg:col-span-2 bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all group">
+                    <div class="aspect-video bg-gray-100 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                        <img src="/api/placeholder/800/400" alt="Featured blog post" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <span class="text-white text-sm bg-blue-600 px-3 py-1 rounded-full">Featured</span>
+                            <h3 class="text-2xl font-bold text-white mt-2">The Evolution of PR in the Digital Age</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-4 text-sm text-gray-600 mb-4">
+                            <span>February 10, 2024</span>
+                            <span>•</span>
+                            <span>5 min read</span>
+                        </div>
+                        <p class="text-gray-600">How digital transformation has revolutionized public relations and what it means for modern PR professionals.</p>
+                        <div class="mt-6">
+                            <a href="#" class="text-blue-600 font-medium hover:text-blue-700 transition-colors">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Regular Blog Posts -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all group">
+                    <div class="aspect-video bg-gray-100 relative overflow-hidden">
+                        <img src="/api/placeholder/400/300" alt="Blog post" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Storytelling Techniques in PR</h3>
+                        <div class="flex items-center gap-4 text-sm text-gray-600 mb-4">
+                            <span>February 8, 2024</span>
+                            <span>•</span>
+                            <span>3 min read</span>
+                        </div>
+                        <p class="text-gray-600">Essential storytelling techniques that every PR professional should master.</p>
+                        <div class="mt-4">
+                            <a href="#" class="text-blue-600 font-medium hover:text-blue-700 transition-colors">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all group">
+                    <div class="aspect-video bg-gray-100 relative overflow-hidden">
+                        <img src="/api/placeholder/400/300" alt="Blog post" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Building Your Personal Brand</h3>
+                        <div class="flex items-center gap-4 text-sm text-gray-600 mb-4">
+                            <span>February 5, 2024</span>
+                            <span>•</span>
+                            <span>4 min read</span>
+                        </div>
+                        <p class="text-gray-600">Tips and strategies for creating a strong personal brand in the digital age.</p>
+                        <div class="mt-4">
+                            <a href="#" class="text-blue-600 font-medium hover:text-blue-700 transition-colors">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all group">
+                    <div class="aspect-video bg-gray-100 relative overflow-hidden">
+                        <img src="/api/placeholder/400/300" alt="Blog post" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Social Media Strategy Guide</h3>
+                        <div class="flex items-center gap-4 text-sm text-gray-600 mb-4">
+                            <span>February 1, 2024</span>
+                            <span>•</span>
+                            <span>6 min read</span>
+                        </div>
+                        <p class="text-gray-600">A comprehensive guide to creating an effective social media strategy.</p>
+                        <div class="mt-4">
+                            <a href="#" class="text-blue-600 font-medium hover:text-blue-700 transition-colors">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button class="px-8 py-3 bg-white text-gray-600 rounded-lg border border-gray-200 hover:border-blue-600 hover:text-blue-600 transition-all">
+                    Load More Posts
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-2xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Subscribe to My Newsletter</h2>
+            <p class="text-gray-600 mb-8">Get the latest posts and insights delivered directly to your inbox.</p>
+            <form class="flex gap-4 max-w-md mx-auto">
+                <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:border-blue-600">
+                <button type="submit" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                    Subscribe
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-8 text-center text-gray-600 border-t border-gray-100">
+        <p>&copy; 2024 Deeksha. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script>
+        // Animate elements on page load
+        gsap.from(".grid > div", {
+            y: 50,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.2,
+            ease: "power4.out"
+        });
+
+        // Category filter buttons
+        const filterButtons = document.querySelectorAll('button');
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('bg-blue-600', 'text-white');
+                    btn.classList.add('bg-white', 'text-gray-600');
+                });
+                // Add active class to clicked button
+                button.classList.remove('bg-white', 'text-gray-600');
+                button.classList.add('bg-blue-600', 'text-white');
+            });
+        });
+    </script>
+</body>
+</html>
