@@ -38,15 +38,21 @@ h1, h2, h3 {
 nav {
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    transition: all 0.3s ease;  
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: translateY(0);
 }
-nav a{
-    font-size:  5.2em;
-    font-weight: 500;
+
+.nav-hidden {
+    transform: translateY(-100%);
 }
 
 .nav-scrolled {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    font-size: 1.2em;
+    font-weight: 500;
 }
 
 /* Skill Bars */
@@ -122,6 +128,7 @@ nav a{
 section {
     position: relative;
     transition: all 0.3s ease;
+    padding-top: 4rem;
 }
 
 /* Media Queries */

@@ -18,11 +18,16 @@ gsap.from("#home .animate-fade-in-delay", {
 });
 
 // Navbar Animation
-gsap.from("nav", {
-    y: -100,
-    opacity: 0,
-    duration: 1,
-    ease: "power4.out"
+let lastScrollY = window.scrollY;
+const nav = document.querySelector("nav");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > lastScrollY) {
+        gsap.to(nav, { y: -100, duration: 0.3, ease: "power4.out" });
+    } else {
+        gsap.to(nav, { y: 0, duration: 0.3, ease: "power4.out" });
+    }
+    lastScrollY = window.scrollY;
 });
 
 // About Section Animations
@@ -92,57 +97,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
             window.scrollTo({
-                top: target.offsetTop - 80, // Adjust for fixed header
+                top: target.offsetTop - 80,
                 behavior: 'smooth'
             });
         }
     });
 });
-
-// Button Handlers for Navigation
-const viewMoreAbout = document.querySelector('.viewMoreAbout');
-const viewAllProjects = document.querySelector('.viewAllProjects');
-
-// Function to handle page transitions
-function pageTransition(url) {
-    // Create transition overlay
-    const overlay = document.createElement('div');
-    overlay.style.position = 'fixed';
-    overlay.style.top = '0';
-    overlay.style.left = '0';
-    overlay.style.width = '100%';
-    overlay.style.height = '100%';
-    overlay.style.backgroundColor = '#2563EB';
-    overlay.style.transform = 'scaleX(0)';
-    overlay.style.transformOrigin = 'left';
-    overlay.style.zIndex = '9999';
-    document.body.appendChild(overlay);
-
-    // Animate overlay
-    gsap.to(overlay, {
-        scaleX: 1,
-        duration: 0.5,
-        ease: "power4.inOut",
-        onComplete: () => {
-            window.location.href = url;
-        }
-    });
-}
-
-// Initialize page transition handlers
-if (viewMoreAbout) {
-    viewMoreAbout.addEventListener('click', (e) => {
-        e.preventDefault();
-        pageTransition('/about.html');
-    });
-}
-
-if (viewAllProjects) {
-    viewAllProjects.addEventListener('click', (e) => {
-        e.preventDefault();
-        pageTransition('/projects.html');
-    });
-}
 
 // Handle mobile menu
 const mobileMenuButton = document.querySelector('[data-mobile-menu]');
@@ -154,15 +114,7 @@ if (mobileMenuButton && mobileMenu) {
     });
 }
 
-// Handle scroll events
-window.addEventListener('scroll', () => {
-    const nav = document.querySelector('nav');
-    if (window.scrollY > 50) {
-        nav.classList.add('nav-scrolled');
-    } else {
-        nav.classList.remove('nav-scrolled');
-    }
-});
-
 // Initialize smooth scroll behavior
 document.documentElement.style.scrollBehavior = 'smooth';
+
+// Let me know if you want me to tweak anything or add new features! 🚀
