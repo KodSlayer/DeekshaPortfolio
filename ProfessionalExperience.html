@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Deeksha</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-purple-50">
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-sm z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600 font-medium">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-blue-600 font-medium">About</a>
+                    <a href="experience.html" class="text-blue-600 font-medium">Experience</a>
+                    <a href="projects.html" class="text-gray-600 hover:text-blue-600 font-medium">Projects</a>
+                    <a href="achievements.html" class="text-gray-600 hover:text-blue-600 font-medium">Achievements</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-blue-600 font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Professional Experience Section -->
+    <section class="pt-32 pb-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <h1 class="text-5xl font-bold mb-12">Professional Experience</h1>
+            <div class="space-y-8">
+                <!-- Your experience cards are placed here -->
+                <div class="bg-gray-50 rounded-lg p-6 hover:shadow-md hover:bg-blue-100 transition-all">
+                    <a href="images.html">
+                    <h3 class="text-xl font-semibold">PR & Events Executive</h3>
+                    <p class="text-blue-600 mb-4">Jain Group Bengaluru | July 2024 - Present</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• Lead PR strategy and event execution for Knowledgeum Academy.</li>
+                        <li>• Developed successful PR campaigns, achieving 20% increase in media coverage</li>
+                        <li>• Set a record with 79.5-foot-long Tiranga project in 41 minutes</li>
+                        <li>• Organized entrepreneurial talks for students</li>
+                        <li>• Managed media for Hepatitis screening initiative to foster community health.</li>
+                    </ul></a>
+                </div>
+                
+                <div class="bg-gray-50 rounded-lg p-6 hover:shadow-md hover:bg-blue-100 transition-all">
+                    <h3 class="text-xl font-semibold">Social Media Manager</h3>
+                    <p class="text-blue-600 mb-4">Gamebitescafe | January 2024 - June 2024</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• Increased social media engagement by 45% through strategic content planning</li>
+                        <li>• Managed end-to-end event planning and execution</li>
+                        <li>• Created and implemented comprehensive social media calendar</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-6 hover:shadow-md hover:bg-blue-100 transition-all">
+                    <h3 class="text-xl font-semibold">Previous Roles</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• Social Media Assistant and Artist Manager at Paper Plane (Remote).</li>
+                        <li>• Marketing and Operational Intern at BOROKA.</li>
+                        <li>• Organized 20-day launch campaign across premium cafes in Goa.</li>
+                        <li>• Coordinated with 15+ venue partners and managed event logistics.</li>
+                        <li>• Freelance Content Writer and Video Editor at Hosakannada Website.</li>
+                        <li>• Stringer at Vijayakarnataka.</li>
+                        <li>• Marketing roles at Mayaloka Wellness Club and Pathway Enterprises.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script>
+        // Animation for sections
+        gsap.from("section > div > *", {
+            y: 30,
+            opacity: 0,
+            duration: 1,
+            stagger: 0.2,
+            ease: "power4.out"
+        });
+    </script>
+</body>
+</html>
