@@ -1,120 +1,66 @@
 // Register GSAP ScrollTrigger Plugin
 gsap.registerPlugin(ScrollTrigger);
 
-// Home Section Animations
-gsap.from("#home .animate-fade-in", {
-    y: 30,
-    opacity: 0,
-    duration: 1,
-    ease: "power4.out"
-});
-
-gsap.from("#home .animate-fade-in-delay", {
-    y: 30,
-    opacity: 0,
-    duration: 1,
-    delay: 0.2,
-    ease: "power4.out"
-});
-
-// Navbar Animation
-let lastScrollY = window.scrollY;
-const nav = document.querySelector("nav");
-
-window.addEventListener("scroll", () => {
-    if (window.scrollY > lastScrollY) {
-        gsap.to(nav, { y: -100, duration: 0.3, ease: "power4.out" });
+// Navbar scroll effect
+const navbar = document.querySelector('nav');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 20) {
+        navbar.classList.add('shadow-md');
     } else {
-        gsap.to(nav, { y: 0, duration: 0.3, ease: "power4.out" });
+        navbar.classList.remove('shadow-md');
     }
-    lastScrollY = window.scrollY;
 });
 
-// About Section Animations
-gsap.from("#about h2", {
-    scrollTrigger: {
-        trigger: "#about",
-        start: "top 80%"
-    },
-    opacity: 0,
-    y: 50,
-    duration: 1,
-    ease: "power4.out"
-});
-
-gsap.from("#about p", {
-    scrollTrigger: {
-        trigger: "#about",
-        start: "top 80%"
-    },
-    opacity: 0,
-    y: 30,
-    duration: 1,
-    stagger: 0.2,
-    ease: "power4.out"
-});
-
-// Animate skill bars
-gsap.from(".skill-bar .h-2 > div", {
-    scrollTrigger: {
-        trigger: ".skill-bar",
-        start: "top 80%"
-    },
-    width: "0%",
-    duration: 1.5,
-    ease: "power4.out",
-    stagger: 0.2
-});
-
-// Projects Section Animations
-gsap.from("#projects h2", {
-    scrollTrigger: {
-        trigger: "#projects",
-        start: "top 80%"
-    },
-    opacity: 0,
-    y: 50,
-    duration: 1,
-    ease: "power4.out"
-});
-
-gsap.from("#projects .group", {
-    scrollTrigger: {
-        trigger: "#projects",
-        start: "top 80%"
-    },
-    opacity: 0,
-    y: 50,
-    duration: 0.8,
-    stagger: 0.2,
-    ease: "power4.out"
-});
-
-// Smooth scrolling for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            window.scrollTo({
-                top: target.offsetTop - 80,
-                behavior: 'smooth'
-            });
+// Animate sections on scroll
+gsap.utils.toArray('section').forEach(section => {
+    gsap.from(section.querySelectorAll('h2, h3, p, .skill-card, .primary-btn, .grid > div'), {
+        y: 30,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.1,
+        ease: "power3.out",
+        scrollTrigger: {
+            trigger: section,
+            start: "top 80%"
         }
     });
 });
 
-// Handle mobile menu
-const mobileMenuButton = document.querySelector('[data-mobile-menu]');
-const mobileMenu = document.querySelector('[data-mobile-menu-items]');
+// Mobile menu toggle
+const mobileMenuButton = document.querySelector('button');
+const mobileMenu = document.createElement('div');
+mobileMenu.classList.add('md:hidden', 'bg-white', 'shadow-lg', 'rounded-lg', 'absolute', 'top-20', 'right-4', 'p-4', 'hidden');
+mobileMenu.innerHTML = `
+    <div class="flex flex-col space-y-4">
+        <a href="#home" class="nav-link font-medium hover:text-primary-500 primary-text">Home</a>
+        <a href="about.html" class="nav-link text-gray-600 hover:text-primary-500">About</a>
+        <a href="ProfessionalExperience.html" class="nav-link text-gray-600 hover:text-primary-500">Experience</a>
+        <a href="projects.html" class="nav-link text-gray-600 hover:text-primary-500">Projects</a>
+        <a href="achievements.html" class="nav-link text-gray-600 hover:text-primary-500">Achievements</a>
+        <a href="contact.html" class="nav-link text-gray-600 hover:text-primary-500">Contact</a>
+    </div>
+`;
+document.querySelector('nav > div').appendChild(mobileMenu);
 
-if (mobileMenuButton && mobileMenu) {
-    mobileMenuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
+mobileMenuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+});
+
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: 'smooth'
+            });
+            
+            // Hide mobile menu if open
+            mobileMenu.classList.add('hidden');
+        }
     });
-}
-
-// Initialize smooth scroll behavior
-document.documentElement.style.scrollBehavior = 'smooth';
-
-// Let me know if you want me to tweak anything or add new features! 🚀
+});

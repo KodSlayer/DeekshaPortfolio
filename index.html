@@ -3,77 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Deeksha - PR & Marketing Specialist Portfolio. Experienced in journalism, public relations, and social media management.">
-    <title>Deeksha - PR & Marketing Portfolio</title>
+    <meta name="description" content="Deeksha - Strategic PR & Events Executive specializing in media relations and impactful storytelling">
+    <title>Deeksha | PR & Events Executive</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Poppins:wght@400;500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gradient-to-br from-blue-50 to-purple-50">
+<body>
     <!-- Navigation -->
-    <nav id="navbar" class="fixed w-full bg-white/80 bg-gradient-to-br transition-transform duration-300">
+    <nav class="fixed w-full bg-white bg-opacity-95 shadow-md z-50 backdrop-filter backdrop-blur-sm">
         <div class="max-w-6xl mx-auto px-4">
-            <div class="flex justify-between items-center h-16">
-                <div class="space-x-8">
-                    <a href="#home" class="text-blue-600 hover:text-blue-700 font-medium">Home</a>
-                    <a href="about.html" class="text-gray-600 hover:text-blue-600 font-medium">About</a>
-                    <a href="ProfessionalExperience.html" class="text-gray-600 hover:text-blue-600 font-medium">Experience</a>
-                    <a href="projects.html" class="text-gray-600 hover:text-blue-600 font-medium">Projects</a>
-                    <a href="achievements.html" class="text-gray-600 hover:text-blue-600 font-medium">Achievements</a>
-                    <a href="contact.html" class="text-gray-600 hover:text-blue-600 font-medium">Contact</a>
+            <div class="flex justify-between items-center h-20">
+                <a href="#" class="font-bold text-2xl brand-logo">
+                    <span class="gold-text">D</span>eeksha
+                </a>
+                <div class="space-x-8 hidden md:block">
+                    <a href="#home" class="nav-link font-medium hover:text-primary-500 active-nav">Home</a>
+                    <a href="about.html" class="nav-link text-gray-600 hover:text-primary-500">About</a>
+                    <a href="ProfessionalExperience.html" class="nav-link text-gray-600 hover:text-primary-500">Experience</a>
+                    <a href="projects.html" class="nav-link text-gray-600 hover:text-primary-500">Projects</a>
+                    <a href="achievements.html" class="nav-link text-gray-600 hover:text-primary-500">Achievements</a>
+                    <a href="contact.html" class="nav-link text-gray-600 hover:text-primary-500">Contact</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button class="text-gray-500 hover:text-gray-800 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>
     </nav>
-    
 
     <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex items-center pt-20">
-        <div class="max-w-6xl mx-auto px-4">
+    <section id="home" class="min-h-screen flex items-center relative overflow-hidden hero-section">
+        <!-- Background Decorative Elements -->
+        <div class="shape-blob w-96 h-96 top-24 right-24 animate-pulse"></div>
+        <div class="shape-blob w-64 h-64 bottom-24 left-24 animate-pulse delay-animation"></div>
+        <div class="absolute inset-0 pattern-grid"></div>
+        
+        <div class="max-w-6xl mx-auto px-4 py-24 relative z-10">
             <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                <!-- Photo on Left (already left-aligned) -->
                 <div class="md:w-1/2 animate-fade-in">
-                    <h1 class="text-6xl font-bold mb-6 leading-tight">Hi, I'm Deeksha</h1>
-                    <h2 class="text-lg text-blue-600 font-medium mb-4 tracking-wide">PR & Events Executive</h2>
-                    <p class="text-xl text-gray-600 mb-8 leading-relaxed font-bold">A passionate storyteller with a background in journalism and public relations.</p>
-                    <a href="contact.html" class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-all hover:scale-105 inline-block">Get in Touch</a>
-                </div>
-                <div class="md:w-1/2 animate-fade-in-delay">
                     <div class="relative">
-                        <img src="images/Photoroom-20250212_002448.png" alt="Deeksha" class="relative rounded-2xl shadow-lg object-cover w-full aspect-square"/>
+                        <div class="absolute inset-0 bg-gradient-to-br from-primary to-primary-dark rounded-2xl transform -rotate-3 scale-105 opacity-20"></div>
+                        <img src="images/Photoroom-20250212_002448.png" alt="Deeksha" class="relative rounded-2xl shadow-xl object-cover w-full aspect-square z-10 floating"/>
+                        <!-- Decorative elements -->
+                        <div class="absolute -bottom-6 -right-6 w-24 h-24 rounded-full decorative-circle-light"></div>
+                        <div class="absolute -top-6 -left-6 w-16 h-16 rounded-full decorative-circle-gold"></div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-24 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-12 text-center">About Me</h2>
-            <div class="grid md:grid-cols-2 gap-12">
-                <div class="space-y-6">
-                    <p class="text-lg text-gray-600 leading-relaxed">I'm a passionate storyteller with a background in journalism and public relations. My journey has always been about crafting stories that resonate with people, whether through a press release, a social media post, or the pages of my own book.</p>
-                    <p class="text-lg text-gray-600 leading-relaxed">Over the years, I've honed my skills in PR strategy, social media management, writing, and interviewing—all with the goal of creating meaningful connections.</p>
-                    <a href="about.html" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-all hover:scale-105 inline-flex items-center gap-2">View More</a>
-                </div>
-                <div class="space-y-6">
-                    <div class="bg-blue-100 p-6 rounded-lg shadow-sm">
-                        <h3 class="text-xl font-semibold mb-4">Skills</h3>
-                        <div class="grid grid-cols-2 gap-4">
-                            <ul class="list-disc list-inside">
-                                <li>Strategic PR Planning</li>
-                                <li>Media Relations</li>
-                                <li>Event Management</li>
-                                <li>Content Strategy</li>
-                                <li>Bilingual Communication (English and Kannada)</li>
-                                <li>Creative Writing </li>
-                            </ul>
-                            <ul class="list-disc list-inside">
-                                <li>Story Writing </li>
-                                <li>Public Speaking</li>
-                                <li>Leadership</li>
-                                <li>Networking</li>
-                                <li>Voice Overing</li>
-                            </ul>
+                
+                <!-- Content on Right -->
+                <div class="md:w-1/2 animate-fade-in">
+                    <h3 class="subheading mb-2 text-lg tracking-wider gold-text">PR & EVENTS EXECUTIVE</h3>
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight primary-text">Hi, I'm <span class="accent-text">Deeksha</span></h1>
+                    <p class="text-xl text-gray-700 mb-8 leading-relaxed">
+                        Strategic storytelling through PR, events & media relations. 
+                        <span class="font-semibold">Turning brand narratives into newsworthy stories that captivate audiences and drive engagement.</span>
+                    </p>
+                    <div class="flex flex-wrap space-x-0 space-y-4 md:space-x-4 md:space-y-0">
+                        <a href="contact.html" class="primary-btn px-8 py-4 rounded-lg inline-block font-medium">
+                            Get in Touch
+                        </a>
+                        <a href="projects.html" class="secondary-btn px-6 py-4 rounded-lg transition-all inline-block font-medium">
+                            View Portfolio
+                        </a>
+                    </div>
+                    <!-- Social Media Icons -->
+                    <div class="mt-12">
+                        <p class="subheading text-sm mb-4 primary-text">CONNECT WITH ME</p>
+                        <div class="flex space-x-6">
+                            <a href="#" class="social-icon">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.1 10.1 0 01-3.127 1.184 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm7.25 12c0 3.866-3.134 7-7 7s-7-3.134-7-7 3.134-7 7-7 7 3.134 7 7zM8 8a2 2 0 11-4 0 2 2 0 014 0zm10 0a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -81,22 +99,258 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-24">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-12 text-center">Featured Projects</h2>
-            <div class="text-center mb-8">
-                <a href="projects.html" class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-all hover:scale-105 inline-flex items-center gap-2">View All Projects</a>
+    <!-- About Section -->
+    <section id="about" class="py-24 relative bg-section">
+        <div class="absolute inset-0 diamond-pattern"></div>
+        <div class="max-w-6xl mx-auto px-4 relative z-10">
+            <h2 class="section-title text-4xl font-bold mb-12 primary-text">About Me</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        I'm a passionate storyteller with a background in journalism and public relations. My journey has always been about crafting stories that resonate with people, whether through a press release, a social media post, or the pages of my own book.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        With experience spanning media relations, event management, and content creation, I specialize in helping brands find their authentic voice and share it with the world.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        My approach combines strategic thinking with creative execution, always with an eye on measurable results and meaningful connections.
+                    </p>
+                    
+                    <!-- Stats -->
+                    <div class="grid grid-cols-3 gap-4 mt-8">
+                        <div class="text-center p-4 rounded-lg stat-card">
+                            <h3 class="text-3xl font-bold mb-1 primary-text">20%</h3>
+                            <p class="text-sm primary-dark-text">Media Growth</p>
+                        </div>
+                        <div class="text-center p-4 rounded-lg stat-card">
+                            <h3 class="text-3xl font-bold mb-1 primary-text">45%</h3>
+                            <p class="text-sm primary-dark-text">Social Engagement</p>
+                        </div>
+                        <div class="text-center p-4 rounded-lg stat-card">
+                            <h3 class="text-3xl font-bold mb-1 primary-text">79.5</h3>
+                            <p class="text-sm primary-dark-text">Feet Tiranga</p>
+                        </div>
+                    </div>
+                    
+                    <a href="about.html" class="primary-btn px-6 py-3 rounded-lg inline-flex items-center gap-2 mt-6">
+                        Learn More About Me
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+                <div>
+                    <div class="bg-white p-8 rounded-lg shadow-md card-border-top">
+                        <h3 class="text-2xl font-semibold mb-6 primary-text">Core Competencies</h3>
+                        <div class="space-y-5">
+                            <div class="skill-card p-4 rounded-md shadow-sm">
+                                <h4 class="subheading text-lg mb-2 primary-text">Strategic Communication</h4>
+                                <ul class="space-y-1 text-gray-700">
+                                    <li>• Media Relations</li>
+                                    <li>• PR Campaign Planning</li>
+                                    <li>• Public Speaking</li>
+                                </ul>
+                            </div>
+                            <div class="skill-card p-4 rounded-md shadow-sm">
+                                <h4 class="subheading text-lg mb-2 primary-text">Content Creation</h4>
+                                <ul class="space-y-1 text-gray-700">
+                                    <li>• Strategic Storytelling</li>
+                                    <li>• Bilingual Communication (English & Kannada)</li>
+                                    <li>• Creative Writing</li>
+                                </ul>
+                            </div>
+                            <div class="skill-card p-4 rounded-md shadow-sm">
+                                <h4 class="subheading text-lg mb-2 primary-text">Leadership & Execution</h4>
+                                <ul class="space-y-1 text-gray-700">
+                                    <li>• Event Management</li>
+                                    <li>• Team Coordination</li>
+                                    <li>• Project Management</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-8 text-center text-gray-600 border-t border-gray-100">
-        <p>&copy; 2024 Deeksha. All rights reserved.</p>
+    <!-- Experience Highlight Section -->
+    <section class="diagonal-box py-24">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="section-title text-4xl font-bold mb-12 text-center text-white">Experience Highlights</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 flex items-center justify-center rounded-full mr-4 icon-bg-light">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 8V16M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="primary-stroke"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold primary-text">PR & Events Executive</h3>
+                            <p class="font-medium text-sm primary-dark-text">Jain Group Bengaluru | July 2024 - Present</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-2 text-gray-700 ml-16">
+                        <li>•  Led PR strategy and event execution for Knowledgeum Academy, achieving 20% increase in media coverage</li>
+                        <li>•  Set a record with 79.5-foot-long Tiranga project completed in just 41 minutes</li>
+                        <li>•  Managed media relations for successful Hepatitis screening initiative</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 flex items-center justify-center rounded-full mr-4 icon-bg-light">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 16V12M12 8H12.01M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="primary-stroke"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold primary-text">Social Media Manager</h3>
+                            <p class="font-medium text-sm primary-dark-text">Gamebitescafe | January 2024 - June 2024</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-2 text-gray-700 ml-16">
+                        <li>•  Increased social media engagement by 45% through strategic content planning</li>
+                        <li>•  Managed end-to-end event planning and execution</li>
+                        <li>•  Created and implemented comprehensive social media calendar</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <a href="ProfessionalExperience.html" class="inline-flex items-center px-6 py-3 rounded-lg bg-white text-primary-700 hover:bg-gray-100 transition-all shadow-md font-medium experience-btn">
+                    View Full Experience
+                    <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-24 relative cta-section">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-white opacity-5 rounded-full -translate-y-1/2 translate-x-1/3"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-white opacity-5 rounded-full translate-y-1/2 -translate-x-1/3"></div>
+        
+        <div class="max-w-4xl mx-auto text-center px-4 relative z-10">
+            <h2 class="text-4xl font-bold mb-4 text-white">Let's Create Your Next PR Success Story</h2>
+            <p class="text-xl mb-8 text-white opacity-90">Ready to elevate your brand's visibility and tell your unique story?</p>
+            <a href="contact.html" class="inline-block bg-white px-8 py-4 rounded-lg hover:bg-gray-100 transition-all hover:shadow-lg font-medium cta-button">
+                Get in Touch
+            </a>
+            
+            <!-- Feature boxes -->
+            <div class="grid md:grid-cols-3 gap-6 mt-16">
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg text-white">
+                    <div class="w-12 h-12 mx-auto bg-white bg-opacity-20 rounded-full flex items-center justify-center mb-4">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                            <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998a12.078 12.078 0 01.665-6.479L12 14z"></path>
+                            <path d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998a12.078 12.078 0 01.665-6.479L12 14zm-8 6h16"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Strategic PR</h3>
+                    <p class="opacity-80">Comprehensive PR strategies tailored to your brand's unique needs</p>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg text-white">
+                    <div class="w-12 h-12 mx-auto bg-white bg-opacity-20 rounded-full flex items-center justify-center mb-4">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 9l3 3-3 3M13 15h3M3 5h18v14H3V5z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Content Creation</h3>
+                    <p class="opacity-80">Compelling storytelling that captivates your target audience</p>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg text-white">
+                    <div class="w-12 h-12 mx-auto bg-white bg-opacity-20 rounded-full flex items-center justify-center mb-4">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Event Management</h3>
+                    <p class="opacity-80">End-to-end event planning and execution for maximum impact</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pt-16 pb-12 primary-dark-bg text-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="col-span-1">
+                    <h3 class="text-2xl font-bold mb-6 footer-logo">
+                        <span class="gold-text">D</span>eeksha
+                    </h3>
+                    <p class="mb-4 text-gray-300">PR & Events Executive specialized in media relations and strategic storytelling.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="footer-social-icon">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-social-icon">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.1 10.1 0 01-3.127 1.184 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-social-icon">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm7.25 12c0 3.866-3.134 7-7 7s-7-3.134-7-7 3.134-7 7-7 7 3.134 7 7zM8 8a2 2 0 11-4 0 2 2 0 014 0zm10 0a2 2 0 11-4 0 2 2 0 014 0z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="footer-link">Home</a></li>
+                        <li><a href="about.html" class="footer-link">About</a></li>
+                        <li><a href="ProfessionalExperience.html" class="footer-link">Experience</a></li>
+                        <li><a href="projects.html" class="footer-link">Projects</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="footer-link">PR Strategy</a></li>
+                        <li><a href="#" class="footer-link">Media Relations</a></li>
+                        <li><a href="#" class="footer-link">Event Management</a></li>
+                        <li><a href="#" class="footer-link">Content Creation</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            <span class="text-gray-300">deekshadee618@gmail.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            <span class="text-gray-300">+91 7204742616</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 Deeksha. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
