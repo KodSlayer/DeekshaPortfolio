@@ -1,3 +1,4 @@
+/* Base Variables */
 :root {
     --primary: #89043d;
     --primary-light: #a3054a;
@@ -9,6 +10,11 @@
     --light: #ffffff;
 }
 
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+/* Base Styles */
 body {
     font-family: 'Manrope', sans-serif;
     background-color: var(--light);
@@ -27,21 +33,7 @@ h1, h2, h3, h4 {
     letter-spacing: 0.5px;
 }
 
-.nav-link {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
-
-.active-nav {
-    color: var(--primary);
-}
-
-.brand-logo {
-    color: var(--primary);
-    font-family: 'Cormorant Garamond', serif;
-}
-
+/* Text Colors */
 .primary-text {
     color: var(--primary);
 }
@@ -58,6 +50,101 @@ h1, h2, h3, h4 {
     color: var(--gold);
 }
 
+/* Navigation Styles */
+.nav-animated {
+    background-color: rgba(137, 4, 61, 0.95);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+}
+
+.nav-animated.scrolled {
+    background-color: rgba(108, 3, 49, 0.98);
+    height: 4.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo {
+    position: relative;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.nav-logo span:first-child {
+    color: var(--gold);
+}
+
+.nav-logo span:last-child {
+    color: white;
+}
+
+.nav-logo::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background: linear-gradient(to right, var(--gold), white);
+    transition: width 0.3s ease;
+}
+
+.nav-logo:hover {
+    transform: translateY(-2px);
+}
+
+.nav-logo:hover::after {
+    width: 100%;
+}
+
+.nav-link {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--gold);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.active-nav {
+    color: white !important;
+}
+
+.active-nav::after {
+    width: 80%;
+}
+
+.nav-animated button {
+    color: white;
+}
+
+.nav-animated button:hover {
+    color: var(--gold);
+}
+
+/* Button Styles */
 .primary-btn {
     background-color: var(--primary);
     color: white;
@@ -85,6 +172,7 @@ h1, h2, h3, h4 {
     transform: translateY(-2px);
 }
 
+/* Section Styles */
 .section-title::after {
     content: "";
     display: block;
@@ -106,6 +194,7 @@ h1, h2, h3, h4 {
     background-color: var(--light);
 }
 
+/* Background Patterns */
 .shape-blob {
     position: absolute;
     border-radius: 50%;
@@ -121,7 +210,7 @@ h1, h2, h3, h4 {
 
 .pattern-grid {
     background-image: linear-gradient(var(--primary-lightest) 1px, transparent 1px), 
-                    linear-gradient(to right, var(--primary-lightest) 1px, transparent 1px);
+                      linear-gradient(to right, var(--primary-lightest) 1px, transparent 1px);
     background-size: 20px 20px;
     opacity: 0.3;
 }
@@ -130,6 +219,20 @@ h1, h2, h3, h4 {
     background-image: radial-gradient(var(--primary-lightest) 2px, transparent 2px);
     background-size: 25px 25px;
     opacity: 0.3;
+}
+
+/* Image Styling */
+.hero-image-wrapper {
+    position: relative;
+    overflow: visible;
+}
+
+.hero-image {
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    z-index: 10;
+    transition: transform 0.3s ease;
 }
 
 .decorative-circle-light {
@@ -143,6 +246,50 @@ h1, h2, h3, h4 {
     z-index: -1;
 }
 
+.image-backdrop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cream);
+    border-radius: 50%;
+    top: -10%;
+    left: -10%;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+.image-glow {
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, var(--primary-lightest) 0%, rgba(255,255,255,0) 70%);
+    top: -10%;
+    left: -10%;
+    z-index: 2;
+    opacity: 0.7;
+}
+
+.image-border {
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    border: 2px solid var(--gold);
+    border-radius: 12px;
+    z-index: 9;
+    opacity: 0.5;
+}
+
+.bg-highlight-circle {
+    background-color: var(--cream);
+    opacity: 0.7;
+    width: 120%;
+    height: 120%;
+    z-index: -1;
+}
+
+/* Social Icons */
 .social-icon {
     color: var(--primary-dark);
     transition: color 0.3s ease;
@@ -152,6 +299,7 @@ h1, h2, h3, h4 {
     color: var(--primary);
 }
 
+/* Card Styles */
 .skill-card {
     transition: all 0.3s ease;
     border-left: 3px solid transparent;
@@ -164,7 +312,15 @@ h1, h2, h3, h4 {
 }
 
 .stat-card {
-    background-color: var(--primary-lightest);
+    background-color: #f9ecf1;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid var(--primary);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(137, 4, 61, 0.1);
 }
 
 .card-border-top {
@@ -179,6 +335,7 @@ h1, h2, h3, h4 {
     stroke: var(--primary);
 }
 
+/* Special Sections */
 .diagonal-box {
     position: relative;
     background-image: linear-gradient(45deg, var(--primary), var(--primary-light));
@@ -201,6 +358,52 @@ h1, h2, h3, h4 {
     color: var(--primary-light);
 }
 
+/* Typography Styles */
+.name-heading {
+    font-family: 'Comic Neue', cursive;
+    color: var(--primary);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.signature-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.signature-text {
+    font-family: 'Dancing Script', cursive;
+    color: var(--primary);
+    font-weight: 600;
+    line-height: 1.2;
+    position: relative;
+}
+
+.calligraphy-text {
+    font-family: 'Playfair Display', 'Cormorant Garamond', serif;
+    font-weight: 700;
+    color: var(--primary);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+}
+
+.calligraphy-text::after {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 2px;
+    background: var(--gold);
+    bottom: -6px;
+    left: 30%;
+}
+
+.bg-gold {
+    background-color: var(--gold);
+}
+
+/* Footer Styles */
 .primary-dark-bg {
     background-color: var(--primary-dark);
 }
@@ -227,6 +430,7 @@ h1, h2, h3, h4 {
     color: white;
 }
 
+/* Animations */
 @keyframes fadeIn {
     from { 
         opacity: 0; 
@@ -253,7 +457,7 @@ h1, h2, h3, h4 {
     animation: float 6s ease-in-out infinite;
 }
 
-/* Mobile responsive adjustments */
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
     .section-title {
         text-align: center;
@@ -261,5 +465,13 @@ h1, h2, h3, h4 {
     
     .section-title::after {
         margin: 12px auto;
+    }
+    
+    nav {
+        background-color: #722F37;
+    }
+    
+    .flex-wrap.gap-4 > a {
+        margin: 0;
     }
 }

@@ -10,7 +10,35 @@ window.addEventListener('scroll', () => {
         navbar.classList.remove('shadow-md');
     }
 });
+// Navbar scroll effect with smoother animation
+window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.nav-animated');
+    const scrollPosition = window.scrollY;
+    
+    if (scrollPosition > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
 
+// Highlight active nav item based on scroll position
+const sections = document.querySelectorAll('section[id]');
+window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    
+    sections.forEach(section => {
+        const sectionHeight = section.offsetHeight;
+        const sectionTop = section.offsetTop - 100;
+        const sectionId = section.getAttribute('id');
+        
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            document.querySelector(`.nav-link[href="#${sectionId}"]`)?.classList.add('active-nav');
+        } else {
+            document.querySelector(`.nav-link[href="#${sectionId}"]`)?.classList.remove('active-nav');
+        }
+    });
+});
 // Animate sections on scroll
 gsap.utils.toArray('section').forEach(section => {
     gsap.from(section.querySelectorAll('h2, h3, p, .skill-card, .primary-btn, .grid > div'), {
