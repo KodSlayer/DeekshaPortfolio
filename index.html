@@ -7,6 +7,8 @@
     <title>Deeksha | PR & Events Executive</title>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Poppins:wght@400;500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -34,296 +36,460 @@
         </div>
     </div>
 </nav>
-    <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex items-center relative overflow-hidden hero-section">
-        <!-- Background Decorative Elements -->
-        <div class="shape-blob w-96 h-96 top-24 right-24 animate-pulse"></div>
-        <div class="shape-blob w-64 h-64 bottom-24 left-24 animate-pulse delay-animation"></div>
-        <div class="absolute inset-0 pattern-grid"></div>
-        
-        <div class="max-w-6xl mx-auto px-4 py-24 relative z-10">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-12">
-                <!-- Photo on Left (already left-aligned) -->
-                <div class="md:w-5/12 animate-fade-in">
-                    <div class="relative">
-                        <div class="absolute inset-0 bg-gradient-to-br from-primary to-primary-dark rounded-2xl transform -rotate-3 scale-105 opacity-20"></div>
-                        <img src="images/Photoroom-20250212_002448.png" alt="Deeksha" class="relative rounded-2xl shadow-xl object-cover w-full aspect-square z-10 floating"/>
-                        <!-- Decorative elements -->
-                        <div class="absolute -bottom-6 -right-6 w-24 h-24 rounded-full decorative-circle-light"></div>
-                        <div class="absolute -top-6 -left-6 w-16 h-16 rounded-full decorative-circle-gold"></div>
-                    </div>
-                </div>
-                
-                <!-- Content on Right -->
-                <div class="md:w-3/4 animate-fade-in">
-                    <h3 class="subheading mb-6 text-lg tracking-wider gold-text">PR & EVENTS EXECUTIVE</h3>
-                    <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight primary-text">Hi, I'm <span class="accent-text">Deeksha</span></h1>
-                    <p class="text-xl text-gray-700 mb-8 leading-relaxed">
-                        Passionate about people, stories and connections, where every pitch matters. 
-                        <span class="font-bold"> &</span>
-                        <span class="font-semibold">Turning brand narratives into newsworthy stories that captivate audiences and drive engagement.</span>
-                    </p>
-                    <div class="flex flex-wrap space-x-0 space-y-4 md:space-x-4 md:space-y-0">
-                        <a href="contact.html" class="primary-btn px-8 py-4 rounded-lg inline-block font-medium">
-                            Get in Touch
-                        </a>
-                        <a href="portfolio.html" class="secondary-btn px-6 py-4 rounded-lg transition-all inline-block font-medium">
-                            View Portfolio
-                        </a>
-                    </div>
-                    <!-- Social Media Icons -->
-                    <div class="mt-12">
-                        <p class="subheading text-sm mb-4 primary-text">CONNECT WITH ME</p>
-                       <!-- Social Media Icons -->
-                        <div class="flex space-x-4">
-                            <a href="https://www.linkedin.com/in/deeksha-hemanth-5a7197200/" class="social-icon">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                                </svg>
-                            </a>
-                            <a href="#" class="social-icon">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.1 10.1 0 01-3.127 1.184 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                                </svg>
-                            </a>
-                            <a href="#" class="social-icon">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.897 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.897-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
+
+<!-- Hero Section -->
+<section id="home" class="min-h-screen flex items-center relative overflow-hidden hero-section">
+    <!-- Background Decorative Elements -->
+    <div class="shape-blob w-96 h-96 top-24 right-24 animate-pulse"></div>
+    <div class="shape-blob w-64 h-64 bottom-24 left-24 animate-pulse delay-animation"></div>
+    <div class="absolute inset-0 pattern-grid"></div>
+    
+    <div class="max-w-6xl mx-auto px-4 py-24 relative z-10">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+            <!-- Photo on Left (already left-aligned) -->
+            <div class="md:w-5/12 animate-fade-in">
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary to-primary-dark rounded-2xl transform -rotate-3 scale-105 opacity-20"></div>
+                    <img src="images/Photoroom-20250212_002448.png" alt="Deeksha" class="relative rounded-2xl shadow-xl object-cover w-full aspect-square z-10 floating"/>
+                    <!-- Decorative elements -->
+                    <div class="absolute -bottom-6 -right-6 w-24 h-24 rounded-full decorative-circle-light"></div>
+                    <div class="absolute -top-6 -left-6 w-16 h-16 rounded-full decorative-circle-gold"></div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-14 relative bg-section">
-        <div class="absolute inset-0 diamond-pattern"></div>
-        <div class="max-w-6xl mx-auto px-4 relative z-10">
-            <h2 class="section-title text-4xl font-bold mb-12 primary-text">About Me</h2>
-            <div class="grid md:grid-cols-2 gap-12">
-                <div class="space-y-6">
-                    <p class="text-lg text-gray-700 leading-relaxed">
-                        I'm a passionate storyteller with a background in journalism and public relations. My journey has always been about crafting stories that resonate with people, whether through a press release, a social media post, or the pages of my own book.
-                    </p>
-                    <p class="text-lg text-gray-700 leading-relaxed">
-                        With experience spanning media relations, event management, and content creation, I specialize in helping brands find their authentic voice and share it with the world.
-                    </p>
-                    <p class="text-lg text-gray-700 leading-relaxed">
-                        My approach combines strategic thinking with creative execution, always with an eye on measurable results and meaningful connections.
-                    </p>
-<!--          
-                    <div class="grid grid-cols-3 gap-4 mt-8">
-                        <div class="text-center p-4 rounded-lg stat-card">
-                            <h3 class="text-3xl font-bold mb-1 primary-text">20%</h3>
-                            <p class="text-sm primary-dark-text">Media Growth</p>
-                        </div>
-                        <div class="text-center p-4 rounded-lg stat-card">
-                            <h3 class="text-3xl font-bold mb-1 primary-text">45%</h3>
-                            <p class="text-sm primary-dark-text">Social Engagement</p>
-                        </div>
-                        <div class="text-center p-4 rounded-lg stat-card">
-                            <h3 class="text-3xl font-bold mb-1 primary-text">79.5</h3>
-                            <p class="text-sm primary-dark-text">Feet Tiranga</p>
-                        </div>
-                    </div>
-                     -->
-                    <a href="about.html" class="primary-btn px-6 py-3 rounded-lg inline-flex items-center gap-2 mt-6">
-                        Learn More About Me
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+            
+            <!-- Content on Right -->
+            <div class="md:w-3/4 animate-fade-in">
+                <h3 class="subheading mb-6 text-lg tracking-wider gold-text">PR & EVENTS EXECUTIVE</h3>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight primary-text">Hi, I'm <span class="accent-text">Deeksha</span></h1>
+                <p class="text-xl text-gray-700 mb-8 leading-relaxed">
+                    Passionate about people, stories and connections, where every pitch matters. 
+                    <span class="font-bold"> &</span>
+                    <span class="font-semibold">Turning brand narratives into newsworthy stories that captivate audiences and drive engagement.</span>
+                </p>
+                <div class="flex flex-wrap space-x-0 space-y-4 md:space-x-4 md:space-y-0">
+                    <a href="contact.html" class="primary-btn px-8 py-4 rounded-lg inline-block font-medium">
+                        Get in Touch
+                    </a>
+                    <a href="portfolio.html" class="secondary-btn px-6 py-4 rounded-lg transition-all inline-block font-medium">
+                        View Portfolio
                     </a>
                 </div>
-                <div>
-                    <div class="bg-white p-4 rounded-lg shadow-md card-border-top">
-                        <h3 class="text-2xl font-semibold mb-6 primary-text">Core Competencies</h3>
-                        <div class="space-y-3">
-                            <div class="skill-card p-4 rounded-md shadow-sm">
-                                <h4 class="subheading text-lg mb-2 primary-text">Strategic Communication</h4>
-                                <ul class="space-y-1 text-gray-700">
-                                    <li>• Media Relations</li>
-                                    <li>• PR Campaign Planning</li>
-                                    <li>• Public Speaking</li>
-                                </ul>
-                            </div>
-                            <div class="skill-card p-4 rounded-md shadow-sm">
-                                <h4 class="subheading text-lg mb-2 primary-text">Content Creation</h4>
-                                <ul class="space-y-1 text-gray-700">
-                                    <li>• Strategic Storytelling</li>
-                                    <li>• Bilingual Communication (English & Kannada)</li>
-                                    <li>• Creative Writing</li>
-                                </ul>
-                            </div>
-                            <div class="skill-card p-4 rounded-md shadow-sm">
-                                <h4 class="subheading text-lg mb-2 primary-text">Leadership & Execution</h4>
-                                <ul class="space-y-1 text-gray-700">
-                                    <li>• Event Management</li>
-                                    <li>• Team Coordination</li>
-                                    <li>• Project Management</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Highlight Section -->
-    <section class="diagonal-box py-14">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="section-title text-4xl font-bold mb-12 text-center text-white">Experience Highlights</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white p-8 rounded-lg shadow-md">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 flex items-center justify-center rounded-full mr-4 icon-bg-light">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 8V16M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="primary-stroke"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-semibold primary-text">PR & Events Executive</h3>
-                            <p class="font-medium text-sm primary-dark-text">Jain Group Bengaluru | July 2024 - Present</p>
-                        </div>
-                    </div>
-                    <ul class="space-y-2 text-gray-700 ml-16">
-                        <li>•  Led PR strategy and event execution for Knowledgeum Academy, achieving 20% increase in media coverage</li>
-                        <li>•  Set a record with 79.5-foot-long Tiranga project completed in just 41 minutes</li>
-                        <li>•  Managed media relations for successful Hepatitis screening initiative</li>
-                    </ul>
-                </div>
-                
-                <div class="bg-white p-8 rounded-lg shadow-md">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 flex items-center justify-center rounded-full mr-4 icon-bg-light">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 16V12M12 8H12.01M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="primary-stroke"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-semibold primary-text">Social Media Manager</h3>
-                            <p class="font-medium text-sm primary-dark-text">Gamebitescafe | January 2024 - June 2024</p>
-                        </div>
-                    </div>
-                    <ul class="space-y-2 text-gray-700 ml-16">
-                        <li>•  Increased social media engagement by 45% through strategic content planning</li>
-                        <li>•  Managed end-to-end event planning and execution</li>
-                        <li>•  Created and implemented comprehensive social media calendar</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="text-center mt-10">
-                <a href="portfolio.html" class="inline-flex items-center px-6 py-3 rounded-lg bg-white text-primary-700 hover:bg-gray-100 transition-all shadow-md font-medium experience-btn">
-                    View Full Experience
-                    <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call to Action Section -->
-    <section class="py-14 relative cta-section">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-white opacity-5 rounded-full -translate-y-1/2 translate-x-1/3"></div>
-        <div class="absolute bottom-0 left-0 w-64 h-64 bg-white opacity-5 rounded-full translate-y-1/2 -translate-x-1/3"></div>
-        
-        <div class="max-w-4xl mx-auto text-center px-4 relative z-10">
-            <h2 class="text-4xl font-bold mb-4 text-white">Let's Create Your Next PR Success Story</h2>
-            <p class="text-xl mb-8 text-white opacity-90">Ready to elevate your brand's visibility and tell your unique story?</p>
-            <a href="contact.html" class="inline-block bg-white px-8 py-4 rounded-lg hover:bg-gray-100 transition-all hover:shadow-lg font-medium cta-button">
-                Get in Touch
-            </a>
-            
-            <!-- Feature boxes -->
-            <div class="grid md:grid-cols-3 gap-6 mt-16">
-                <div class="bg-white bg-opacity-10 p-6 rounded-lg text-white">
-                    <div class="w-12 h-12 mx-auto bg-white bg-opacity-20 rounded-full flex items-center justify-center mb-4">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-                            <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998a12.078 12.078 0 01.665-6.479L12 14z"></path>
-                            <path d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998a12.078 12.078 0 01.665-6.479L12 14zm-8 6h16"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Strategic PR</h3>
-                    <p class="opacity-80">Comprehensive PR strategies tailored to your brand's unique needs</p>
-                </div>
-                
-                <div class="bg-white bg-opacity-10 p-6 rounded-lg text-white">
-                    <div class="w-12 h-12 mx-auto bg-white bg-opacity-20 rounded-full flex items-center justify-center mb-4">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8 9l3 3-3 3M13 15h3M3 5h18v14H3V5z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Content Creation</h3>
-                    <p class="opacity-80">Compelling storytelling that captivates your target audience</p>
-                </div>
-                
-                <div class="bg-white bg-opacity-10 p-6 rounded-lg text-white">
-                    <div class="w-12 h-12 mx-auto bg-white bg-opacity-20 rounded-full flex items-center justify-center mb-4">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Event Management</h3>
-                    <p class="opacity-80">End-to-end event planning and execution for maximum impact</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="py-4 bg-white border-t border-gray-200 ">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="flex flex-col md:flex-row justify-between items-start">
-                <!-- Left side with branding and social icons -->
-                <div class="mb-6 md:mb-0">
-                    <h3 class="text-2xl font-bold mb-3">
-                        <span style="color: #89043d;">D</span>eeksha
-                    </h3>
-                    <p class="mb-4 text-gray-600 max-w-sm">PR & Events Executive. Passionate about people, stories and connections. Where every pitch matters.</p>
+                <!-- Social Media Icons -->
+                <div class="mt-12">
+                    <p class="subheading text-sm mb-4 primary-text">CONNECT WITH ME</p>
+                   <!-- Social Media Icons -->
                     <div class="flex space-x-4">
-                        <a href="#" class="text-gray-600 hover:text-[#89043d] transition-colors">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <a href="https://www.linkedin.com/in/deeksha-hemanth-5a7197200/" class="social-icon">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                             </svg>
                         </a>
-                        <a href="#" class="text-gray-600 hover:text-[#89043d] transition-colors">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <a href="#" class="social-icon">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.1 10.1 0 01-3.127 1.184 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
                             </svg>
                         </a>
-                        <a href="#" class="text-gray-600 hover:text-[#89043d] transition-colors">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <a href="#" class="social-icon">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.897 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.897-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
                             </svg>
                         </a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-14 relative bg-section">
+    <div class="absolute inset-0 diamond-pattern"></div>
+    <div class="max-w-6xl mx-auto px-4 relative z-10">
+        <h2 class="section-title text-4xl font-bold mb-12 primary-text">About Me</h2>
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="space-y-6">
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    I'm a passionate storyteller with a background in journalism and public relations. My journey has always been about crafting stories that resonate with people, whether through a press release, a social media post, or the pages of my own book.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    With experience spanning media relations, event management, and content creation, I specialize in helping brands find their authentic voice and share it with the world.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    My approach combines strategic thinking with creative execution, always with an eye on measurable results and meaningful connections.
+                </p>
+                <a href="about.html" class="primary-btn px-6 py-3 rounded-lg inline-flex items-center gap-2 mt-6">
+                    Learn More About Me
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+            <div>
+                <div class="bg-white p-4 rounded-lg shadow-md card-border-top">
+                    <h3 class="text-2xl font-semibold mb-6 primary-text">Core Competencies</h3>
+                    <div class="space-y-3">
+                        <div class="skill-card p-4 rounded-md shadow-sm">
+                            <h4 class="subheading text-lg mb-2 primary-text">Strategic Communication</h4>
+                            <ul class="space-y-1 text-gray-700">
+                                <li>• Media Relations</li>
+                                <li>• PR Campaign Planning</li>
+                                <li>• Public Speaking</li>
+                            </ul>
+                        </div>
+                        <div class="skill-card p-4 rounded-md shadow-sm">
+                            <h4 class="subheading text-lg mb-2 primary-text">Content Creation</h4>
+                            <ul class="space-y-1 text-gray-700">
+                                <li>• Strategic Storytelling</li>
+                                <li>• Bilingual Communication (English & Kannada)</li>
+                                <li>• Creative Writing</li>
+                            </ul>
+                        </div>
+                        <div class="skill-card p-4 rounded-md shadow-sm">
+                            <h4 class="subheading text-lg mb-2 primary-text">Leadership & Execution</h4>
+                            <ul class="space-y-1 text-gray-700">
+                                <li>• Event Management</li>
+                                <li>• Team Coordination</li>
+                                <li>• Project Management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Recent Work Section with Centered Slider -->
+<section class="py-14 bg-section">
+    <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-4xl font-bold mb-4 text-center primary-text">Recent Work</h2>
+        <div class="border-b-2 border-primary w-20 mx-auto mb-12"></div>
+        
+        <!-- Centered Work Slider -->
+        <div class="work-slider-container relative">
+            <div class="work-slider">
+                <!-- Work Item 1 -->
+                <div class="work-slide">
+                    <div class="grid grid-cols-2 bg-white rounded-lg overflow-hidden">
+                        <div class="h-96 bg-gray-200">
+                            <img src="images/tiranga-project.jpg" alt="Tiranga Project" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-8 flex flex-col justify-center">
+                            <p class="text-sm gold-text mb-2">Knowledgeum Academy • August 2024</p>
+                            <h3 class="text-2xl font-semibold mb-3 primary-text">79.5-Foot Tiranga Project</h3>
+                            <p class="text-gray-600 mb-6">Set a record with 79.5-foot-long Tiranga project completed in just 41 minutes with enthusiastic participation from students.</p>
+                            <a href="#" class="inline-flex items-center font-medium primary-text">
+                                View Project
+                                <svg class="ml-1 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 
-                <!-- Right side with contact information -->
-                <div class="mt-6 md:mt-0">
-                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
-                    <ul class="space-y-2">
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 mr-2 mt-0.5" style="color: #89043d;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                            </svg>
-                            <span class="text-gray-600">deekshadee618@gmail.com</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 mr-2 mt-0.5" style="color: #89043d;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-                            </svg>
-                            <span class="text-gray-600">+91 7204742616</span>
-                        </li>
-                    </ul>
+                <!-- Work Item 2 -->
+                <div class="work-slide">
+                    <div class="grid grid-cols-2 bg-white rounded-lg overflow-hidden">
+                        <div class="h-96 bg-gray-200">
+                            <img src="images/hepatitis-campaign.jpg" alt="Hepatitis Awareness Campaign" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-8 flex flex-col justify-center">
+                            <p class="text-sm gold-text mb-2">Jain Group • September 2024</p>
+                            <h3 class="text-2xl font-semibold mb-3 primary-text">Hepatitis Awareness Campaign</h3>
+                            <p class="text-gray-600 mb-6">Led a comprehensive public awareness campaign about hepatitis prevention, securing media coverage and community participation.</p>
+                            <a href="#" class="inline-flex items-center font-medium primary-text">
+                                View Campaign
+                                <svg class="ml-1 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Work Item 3 -->
+                <div class="work-slide">
+                    <div class="grid grid-cols-2 bg-white rounded-lg overflow-hidden">
+                        <div class="h-96 bg-gray-200">
+                            <img src="images/social-media-campaign.jpg" alt="Social Media Campaign" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-8 flex flex-col justify-center">
+                            <p class="text-sm gold-text mb-2">Gamebitescafe • March 2024</p>
+                            <h3 class="text-2xl font-semibold mb-3 primary-text">Strategic Content Planning</h3>
+                            <p class="text-gray-600 mb-6">Increased social media engagement by 45% through strategic content planning and comprehensive social calendar management.</p>
+                            <a href="#" class="inline-flex items-center font-medium primary-text">
+                                View Project
+                                <svg class="ml-1 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Work Item 4 -->
+                <div class="work-slide">
+                    <div class="grid grid-cols-2 bg-white rounded-lg overflow-hidden">
+                        <div class="h-96 bg-gray-200">
+                            <img src="images/media-relations.jpg" alt="Media Relations" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-8 flex flex-col justify-center">
+                            <p class="text-sm gold-text mb-2">Jain Group • October 2024</p>
+                            <h3 class="text-2xl font-semibold mb-3 primary-text">Media Relations Excellence</h3>
+                            <p class="text-gray-600 mb-6">Achieved 20% increase in media coverage through strategic PR campaigns and developing strong media relationships.</p>
+                            <a href="#" class="inline-flex items-center font-medium primary-text">
+                                View Project
+                                <svg class="ml-1 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Work Item 5 -->
+                <div class="work-slide">
+                    <div class="grid grid-cols-2 bg-white rounded-lg overflow-hidden">
+                        <div class="h-96 bg-gray-200">
+                            <img src="images/event-management.jpg" alt="Event Management" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-8 flex flex-col justify-center">
+                            <p class="text-sm gold-text mb-2">Gamebitescafe • May 2024</p>
+                            <h3 class="text-2xl font-semibold mb-3 primary-text">Corporate Event Coordination</h3>
+                            <p class="text-gray-600 mb-6">Managed end-to-end planning and execution of corporate events, ensuring seamless experiences for all participants.</p>
+                            <a href="#" class="inline-flex items-center font-medium primary-text">
+                                View Event
+                                <svg class="ml-1 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
             
-            <div class="mt-2 pt-2 border-t border-gray-200 text-center text-gray-600 text-sm">
-                <p class="text-gray-500 text-xs mt-2">&copy; 2025 Deeksha. All rights reserved.</p>
+            <!-- Custom Navigation Arrows
+            <button class="work-slider-prev absolute top-1/2 left-4 z-10 w-12 h-12 rounded-full bg-primary flex items-center justify-center transform -translate-y-1/2 focus:outline-none">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+            </button>
+            <button class="work-slider-next absolute top-1/2 right-4 z-10 w-12 h-12 rounded-full bg-primary flex items-center justify-center transform -translate-y-1/2 focus:outline-none">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </button> -->
+            
+            <!-- Navigation Dots -->
+            <div class="flex justify-center mt-8">
+                <div class="work-slider-dots"></div>
             </div>
         </div>
-    </footer>
+    </div>
+</section>
+
+
+<!-- Call to Action Section -->
+<section class="py-14 relative cta-section">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-white opacity-5 rounded-full -translate-y-1/2 translate-x-1/3"></div>
+    <div class="absolute bottom-0 left-0 w-64 h-64 bg-white opacity-5 rounded-full translate-y-1/2 -translate-x-1/3"></div>
+    
+    <div class="max-w-4xl mx-auto text-center px-4 relative z-10">
+        <h2 class="text-4xl font-bold mb-4 text-white">Let's Create Your Next PR Success Story</h2>
+        <p class="text-xl mb-8 text-white opacity-90">Ready to elevate your brand's visibility and tell your unique story?</p>
+        <a href="contact.html" class="inline-block bg-white px-8 py-4 rounded-lg hover:bg-gray-100 transition-all hover:shadow-lg font-medium cta-button">
+            Get in Touch
+        </a>
+        
+        <!-- Feature boxes -->
+        <div class="grid md:grid-cols-3 gap-6 mt-16">
+            <div class="bg-white bg-opacity-10 p-6 rounded-lg text-white">
+                <div class="w-12 h-12 mx-auto bg-white bg-opacity-20 rounded-full flex items-center justify-center mb-4">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                        <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998a12.078 12.078 0 01.665-6.479L12 14z"></path>
+                        <path d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998a12.078 12.078 0 01.665-6.479L12 14zm-8 6h16"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Strategic PR</h3>
+                <p class="opacity-80">Comprehensive PR strategies tailored to your brand's unique needs</p>
+            </div>
+            
+            <div class="bg-white bg-opacity-10 p-6 rounded-lg text-white">
+                <div class="w-12 h-12 mx-auto bg-white bg-opacity-20 rounded-full flex items-center justify-center mb-4">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 9l3 3-3 3M13 15h3M3 5h18v14H3V5z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Content Creation</h3>
+                <p class="opacity-80">Compelling storytelling that captivates your target audience</p>
+            </div>
+            
+            <div class="bg-white bg-opacity-10 p-6 rounded-lg text-white">
+                <div class="w-12 h-12 mx-auto bg-white bg-opacity-20 rounded-full flex items-center justify-center mb-4">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Event Management</h3>
+                <p class="opacity-80">End-to-end event planning and execution for maximum impact</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="py-4 bg-white border-t border-gray-200">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-start">
+            <!-- Left side with branding and social icons -->
+            <div class="mb-6 md:mb-0">
+                <h3 class="text-2xl font-bold mb-3">
+                    <span style="color: #89043d;">D</span>eeksha
+                </h3>
+                <p class="mb-4 text-gray-600 max-w-sm">PR & Events Executive. Passionate about people, stories and connections. Where every pitch matters.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-600 hover:text-[#89043d] transition-colors">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-[#89043d] transition-colors">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.1 10.1 0 01-3.127 1.184 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-[#89043d] transition-colors">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.897 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.897-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Right side with contact information -->
+                    <div class="mt-6 md:mt-0">
+                        <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 mr-2 mt-0.5" style="color: #89043d;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                                <span class="text-gray-600">deekshadee618@gmail.com</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 mr-2 mt-0.5" style="color: #89043d;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                </svg>
+                                <span class="text-gray-600">+91 7204742616</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mt-2 pt-2 border-t border-gray-200 text-center text-gray-600 text-sm">
+                    <p class="text-gray-500 text-xs mt-2">&copy; 2025 Deeksha. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- Scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <script>
+            // Initialize Slick Slider
+            $(document).ready(function(){
+                $('.work-slider').slick({
+                    dots: true,
+                    infinite: true,
+                    speed: 500,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 5000,
+                    arrows: true,
+                    adaptiveHeight: true,
+                    responsive: [
+                        {
+                            breakpoint: 1024,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1
+                            }
+                        }
+                    ]
+                });
+            });
+        
+            // Mobile menu toggle
+            document.addEventListener('DOMContentLoaded', function() {
+                const mobileMenuButton = document.querySelector('nav button');
+                let mobileMenu = document.querySelector('.mobile-menu');
+                
+                if (!mobileMenu) {
+                    mobileMenu = document.createElement('div');
+                    mobileMenu.classList.add('mobile-menu', 'md:hidden', 'bg-white', 'shadow-lg', 'rounded-lg', 'absolute', 'top-20', 'right-4', 'p-4', 'hidden', 'z-50');
+                    mobileMenu.innerHTML = `
+                        <div class="flex flex-col space-y-4">
+                            <a href="#home" class="nav-link font-medium hover:text-primary primary-text">Home</a>
+                            <a href="about.html" class="nav-link text-gray-600 hover:text-primary">About</a>
+                            <a href="portfolio.html" class="nav-link text-gray-600 hover:text-primary">Experience</a>
+                            <a href="contact.html" class="nav-link text-gray-600 hover:text-primary">Contact</a>
+                        </div>
+                    `;
+                    document.querySelector('nav > div').appendChild(mobileMenu);
+                }
+                
+                if (mobileMenuButton) {
+                    mobileMenuButton.addEventListener('click', function() {
+                        mobileMenu.classList.toggle('hidden');
+                    });
+                }
+            });
+        
+            // Navbar scroll effect
+            window.addEventListener('scroll', function() {
+                const navbar = document.querySelector('nav');
+                const navAnimated = document.querySelector('.nav-animated');
+                
+                if (window.scrollY > 20 && navbar) {
+                    navbar.classList.add('shadow-md');
+                } else if (navbar) {
+                    navbar.classList.remove('shadow-md');
+                }
+                
+                if (window.scrollY > 50 && navAnimated) {
+                    navAnimated.classList.add('scrolled');
+                } else if (navAnimated) {
+                    navAnimated.classList.remove('scrolled');
+                }
+            });
+        
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const targetId = this.getAttribute('href');
+                    
+                    if (targetId === '#' || targetId === '') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        e.preventDefault();
+                        
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Hide mobile menu if open
+                        const mobileMenu = document.querySelector('.mobile-menu');
+                        if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                            mobileMenu.classList.add('hidden');
+                        }
+                    }
+                });
+            });
+        </script>
+        </body>
+        </html>
