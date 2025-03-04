@@ -336,10 +336,52 @@ h1, h2, h3, h4 {
 }
 
 /* Special Sections */
+/* Updated Diagonal Box Styling */
 .diagonal-box {
     position: relative;
     background-image: linear-gradient(45deg, var(--primary), var(--primary-light));
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    padding: 4rem 0;
+    margin-bottom: 5rem; /* Add space after the diagonal */
+    clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+}
+
+/* Fix for sections after the diagonal-box */
+.diagonal-box + section {
+    position: relative;
+    z-index: 1;
+    margin-top: 5px; /* Adjust as needed */
+}
+
+/* Ensure elements inside diagonal box are properly visible */
+.diagonal-box .grid,
+.diagonal-box h2,
+.diagonal-box p,
+.diagonal-box .backdrop-filter,
+.diagonal-box .bg-white {
+    position: relative;
+    z-index: 4;
+}
+
+/* For achievements section specifically */
+#achievements {
+    padding-bottom: 6rem; /* Add more padding at bottom to account for slant */
+}
+
+/* For sections that need to overlap properly */
+.py-14,
+.py-10,
+.py-24 {
+    position: relative;
+    z-index: 2;
+}
+
+/* Adjust the call to action section that comes after diagonal sections */
+.py-10.bg-section {
+    position: relative;
+    z-index: 10;
+    margin-top: -2rem;
+    padding-top: 5rem;
+    background-color: var(--light) !important;
 }
 
 .experience-btn {
